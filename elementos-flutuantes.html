@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementos Flutuantes</title>
     <style>
+        #principal{
+            border: 1px solid red;
+            background: green;
+        }
         .conteudo{
             background: lightblue;
             border: 1px solid gray;
@@ -14,7 +18,27 @@
             margin: 10px;
             float: left;
         }
-       /* .conteudo1{
+        .conteudo-zero{
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            
+        }
+
+        .clear{
+            clear: both;
+        }
+        /*.conteudo1{
+            background: lightcoral;
+            border: 1px solid gray;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }
+        .conteudo1{
             background: red;
             border: 1px solid gray;
             width: 150px;
@@ -25,14 +49,27 @@
     </style>
 </head>
 <body>
-    <div class="conteudo">
-        Conteudo 1
+    <div id="principal">
+        <div class="conteudo">
+            Conteudo 1
+        </div>
+        <div class="conteudo">
+            Conteudo 2
+        </div>
+        <div class="conteudo">
+            Conteudo 3
+        </div>
+        <div class="clear"></div>
     </div>
-    <div class="conteudo">
-        Conteudo 2
-    </div>
-    <div class="conteudo">
-        Conteudo 3
-    </div>
+
+    
+    <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolore sint ipsam qui 
+        hic dolores ratione. Maxime sunt aspernatur illum, fuga amet sequi sit quisquam perspiciatis.
+        Debitis totam consequatur assumenda.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta rerum amet iure facilis.
+        Commodi odio quidem alias distinctio labore veniam in assumenda officia consequatur nulla omnis,
+        corrupti maxime recusandae dolorem!
+    </p>
 </body>
 </html>
